@@ -1,4 +1,4 @@
-# Project Name Here
+# Hexapod
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
@@ -13,6 +13,14 @@ You should comment out all portions of your portfolio that you have not complete
 
 ![Headstone Image](CodyC.png)
   
+# Starter Project: Retro Arcade Console
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MOtjQcMDxQQ?si=XrkvdSWTWXNjZnzv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+For my first milestone, I assembled a retro arcade console. Using a 2.8x3.8inch PCB as a base, I soldered on a 12 mm 5V passive buzzer, a 220uF 16V electric capacitor, a 4-pin 90 micro usb, a 8x8mm self-switch, a 3631AS digitron display, a STC8H3K64S2 IC chip, two 1088BS 8x8mm LED dot matrix modules, and a battery case to the PCB. Then, using a variety of colored caps and acrylic shells, I finalized my project. It functions by switching on the red power button and selecting the level at which to play using the left and right blue buttons. After then pressing the yellow button to confirm the level, it starts playing tetris. It plays a little tertris tune at the beginning and keeps score in the top right corner. Once finished, the power switch can be pushed again to turn it off.
+
+During my assembly, I struggled soldering on specific pieces. For example, the two wires connecting the battery pack to the PCB are very small and in close proximity not only to each other, but to other parts as well. So, while soldering on the wires, my soldering iron accidently touched the power switch and melted one of its corners. It still functions, but if I had soldered any longer, it may have permantly damaged and shut down the power switch. So next time, when I begin soldering my intensive project, the Hexapod, I will be more mindful of not only my surroundings, but the surrounds of my soldering iron.
+
 # Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
@@ -50,14 +58,6 @@ For your first milestone, describe what your project is and how you plan to buil
 - Technical progress you've made so far
 - Challenges you're facing and solving in your future milestones
 - What your plan is to complete your project
-
-# Starter Project: Retro Arcade Console
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MOtjQcMDxQQ?si=XrkvdSWTWXNjZnzv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-For my first milestone, I assembled a retro arcade console. Using a 2.8x3.8inch PCB as a base, I soldered on a 12 mm 5V passive buzzer, a 220uF 16V electric capacitor, a 4-pin 90 micro usb, a 8x8mm self-switch, a 3631AS digitron display, a STC8H3K64S2 IC chip, two 1088BS 8x8mm LED dot matrix modules, and a battery case to the PCB. Then, using a variety of colored caps and acrylic shells, I finalized my project. It functions by switching on the red power button and selecting the level at which to play using the left and right blue buttons. After then pressing the yellow button to confirm the level, it starts playing tetris. It plays a little tertris tune at the beginning and keeps score in the top right corner. Once finished, the power switch can be pushed again to turn it off.
-
-During my assembly, I struggled soldering on specific pieces. For example, the two wires connecting the battery pack to the PCB are very small and in close proximity not only to each other, but to other parts as well. So, while soldering on the wires, my soldering iron accidently touched the power switch and melted one of its corners. It still functions, but if I had soldered any longer, it may have permantly damaged and shut down the power switch. So next time, when I begin soldering my intensive project, the Hexapod, I will be more mindful of not only my surroundings, but the surrounds of my soldering iron.
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
