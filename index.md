@@ -11,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Cody C | Aliso Niguel High School | Mechanical Engineering | Incoming Junior
 
-![Headstone Image](CodyC.jpeg)
+![Headstone Image](CodyC.png)
   
 # Starter Project: Retro Arcade Console
 
