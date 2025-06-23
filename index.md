@@ -1,11 +1,6 @@
 # Hexapod
 I built a Hexapod robot that moves via a wireless remote control. (TBD)
 
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
-
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Cody C | Aliso Niguel High School | Mechanical Engineering | Incoming Junior
