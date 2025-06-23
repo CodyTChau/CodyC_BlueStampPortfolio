@@ -10,7 +10,7 @@ I built a Hexapod robot that moves via a wireless remote control. (TBD)
 |:--:|:--:|:--:|:--:|
 | Cody C | Aliso Niguel High School | Mechanical Engineering | Incoming Junior
 
-![Headstone Image](CodyChau.jpeg)
+![Headstone Image]<img src="(CodyChau.jpeg)" width="450" height="600">
   
 # Starter Project: Retro Arcade Console
 
