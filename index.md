@@ -37,14 +37,6 @@ I did not face many challenges during this milestone, but calibrating each leg p
 
 For my third milestone, I built the remote control for the Hexapod and connected it to the robot. This milestone includes M2.5*8 screws, M2.5*10 screws, M2.5 nuts, a Freenove control board, a Freenove smart car remote shield, a 9V battery holder, two wireless (RF) modules, and acrylic parts. So, after assembling each of these parts to form the remote control, I connected it to my computer via USB cable and uploaded the necessary code using the Arduino program, the same method I used to upload the code for the Hexapod control board. After doing so, the remote control's wireless module was able to connect to its identical module that I installed onto the Hexapod control board, allowing me to control its movement via remote control. The remote control itself consists of a three switchs, two dials (only one is used), and one joystick. The joystick serves as the main component controlling the Hexapod, moving the robot forward, backward, right, and left if the joystick is pushed in that respective direction. However, each switch activiates a different movement for the joystick; walking, shifting, and tiliting. Multiple switches can be turned on to perform different movements at the same time, allowing the Hexapod to walk and turn at the same time. The dial is used to control the overall height of the Hexapod, elevating its body after full leg extension, and laying its body on the floor after full leg retraction.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
-
 <!---
 # Final Milestone
 
