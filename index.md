@@ -31,6 +31,8 @@ For my second milestone, I finalized the body of the Hexapod, calibrated each le
 
 I did not face many challenges during this milestone, but calibrating each leg proved to be an arduous and strenuous task. There are six separate controls to adjust each leg's X, Y, and Z position, so individually clicking each button via mousepad was tiring and irritating. But with careful precision and much patience, each leg was correctly calibrated and performed perfectly when powered on and tested. So now, for my third milestone, I will build and connect the remote control for the Hexapod, which would fully complete the FREENOVE Hexapod Robot Kit.
 
+<img src="Screenshot 2025-06-27 132400.jpg">
+
 # Third Milestone: Building the Remote Control
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7WlOX7pwp6g?si=nfwdGRvKDJGPHQcO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
