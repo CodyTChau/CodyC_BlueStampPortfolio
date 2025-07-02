@@ -45,7 +45,6 @@ For my third milestone, I built the remote control for the Hexapod and connected
 Connecting the remote control to the Hexapod proved more difficult than expected due inexplicit directions and complications with the code in Arduino, but because it was the same process as uploading the code into the Hexapod control board, I was able to solve the problem quicker than before. Besides this obstacle, building the remote control was relatively simple compared to the Hexapod and testing the remote was similar to the phone and computer testing, so I was familiar with all the Hexapod movement capabilites. So, I now plan to make all my modifications.  
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 <img src="Screenshot 2025-07-02 132955.jpg">
 
