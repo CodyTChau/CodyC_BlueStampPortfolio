@@ -55,26 +55,6 @@ Hexapod Code:
 
 LK Cokoino Arm Code:
 
-#include "src/CokoinoArm.h"
-#define buzzerPin 9
-
-CokoinoArm arm;
-int xL,yL,xR,yR;
-
-int currentAngle2 = 90; // Start at a neutral mid-point (adjust as needed)
-
-int currentAngle3 = 90; // Neutral position for servo3
-
-int currentAngle4 = 90;  // Start at neutral for claw
-
-int xL_center = 512, yL_center = 512;
-int xR_center = 512, yR_center = 512;
-int deadZone = 30; // you can increase this to 40+ if needed
-
-const int act_max=170;    //Default 10 action,4 the Angle of servo
-int act[act_max][4];    //Only can change the number of action
-int num=0,num_do=0;
-///////////////////////////////////////////////////////////////
 void turnUD(void) {
   int deviation = xL - xL_center;
 
