@@ -7,6 +7,16 @@ The Hexapod is a six legged robot designed to mimic the walking of similar insec
 
 <img src="CodyChau.jpeg" width="450" height="600">
 
+<!---
+
+# Final Milestone: Adding a Claw & Finalizing the Build
+
+### Summary
+
+For my final milestone, I built a robotic arm for the top of my Hexapod robot. This arm comes from the LK Cokoino Robotic Arm Kit, and comes with an arduino nano-style MCU board, a servo driver shield, three MG90S micro servos, one SG90 servo, two joystick modules, many acrlyic peices, and a variety of screws, nuts, and spacers for assembly. However, I did not have the required batteries for the given battery case. So instead, I soldered on a new battery case compatible with the AA batteries we did have in stock. Then, after assembling and programming the rest of the Cokoino arm, I began the process of integrating the arm ontop of the Hexapod. By drilling the adjacent holes in vacant places on both the top acrylic piece of the Hexapod and the acrylic base plate of the Cokino arm, I used spare brass standoffs to attach the arm. However, the Hexapod was now unevenly weighted due to front loading the arm towards the front of the Hexapod for maximum freedom of movement. So, I decided to design and 3D print a battery case holder for both the Cokoino arm battery case and the Hexapod battery pack for the back of the Hexapod in Solidworks. Now, not only was the Hexapod balanced, but the batteries were no longer detached from the build. Finally, I decided to make the Cokoino arm wirelessly controlled from my phone by installing a HM-10 module onto the arduino nano and updating the code. 
+
+-->
+
 # Third Milestone: Building the Remote Control
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7WlOX7pwp6g?si=nfwdGRvKDJGPHQcO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
