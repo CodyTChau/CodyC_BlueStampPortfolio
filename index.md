@@ -285,3 +285,4 @@ t
 - <a href="https://www.google.com/"> google.com </a>
 - <a href="https://forum.arduino.cc/?utm_source=google&utm_medium=cpc&utm_campaign=US-Pmax&gad_source=1&gad_campaignid=22096018017&gbraid=0AAAAACbEa87kkIPAge4oJDHhq5mou8kNd&gclid=CjwKCAjw7MLDBhAuEiwAIeXGIUnnXopqW49c_WzxMeU598L7HnDryC3cIj5LD9C1Jiv0ZrMBpG4WZRoCyqAQAvD_BwE
 "> forum.arduino.cc </a>
+- <a href="[https://chatgpt.com/](https://www.youtube.com/watch?v=nivTZeGthf4)"> YT Freenove Hexapod tutorial </a>
