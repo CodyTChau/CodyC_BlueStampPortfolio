@@ -280,6 +280,7 @@ t
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | FREENOVE Hexapod Robot Kit | contains Hexapod components | $126.95 | <a href="https://www.amazon.com/Freenove-Raspberry-Crawling-Detailed-Tutorial/dp/B07FLVZ2DN?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=AV3WCPW70PEXC&th=1"> Amazon Link </a> |
+| LK Cokoino Robot Arm Kit | contains LK Cokoino Arm components | $126.95 | <a href="[https://www.amazon.com/Freenove-Raspberry-Crawling-Detailed-Tutorial/dp/B07FLVZ2DN?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=AV3WCPW70PEXC&th=1](https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1)"> Amazon Link </a> |
 
 # Resources Used
 
