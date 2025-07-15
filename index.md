@@ -80,6 +80,8 @@ During my assembly, I struggled soldering on specific pieces. For example, the t
 
 <img src="Screenshot 2025-07-02 132955.jpg">
 
+<img src="wiring diagram cokoino arm.png">
+
 <!---
 # Final Milestone
 
@@ -279,7 +281,7 @@ void loop() {
   }
 } </pre>
 
-If you see this it means the page is up to date
+If you see this it means the page is up to date fr fr
 
 # Bill of Materials
 
