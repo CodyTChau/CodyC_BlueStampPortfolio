@@ -44,7 +44,7 @@ Connecting the remote control to the Hexapod proved more difficult than expected
 For my second milestone, I finalized the body of the Hexapod, calibrated each leg to their correct position, tested its movement, and connected it to my phone. This milestone only includes a 75cm cable tidy and a WLAN module because most of the work was confined to the online program used to calibrate and test the Hexapod known as the Processing App. So, after organizing all the cables using the cable tidy and installing the WLAN module into the control board, I connected the Hexapod to my computer via USB cable and began adjusting each leg to their respective point on the calibration graph shown below using the Processing App. After modifying each leg, I was then able to power on the Hexapod and test its movement using the controls tab provided in the program. It successfully turned left and right, moved forward and backward, shifted its body position, and tilted its body position. But the Hexapod can also be controlled with a phone. The WLAN module connected to the control board emits its own Wifi signal, creating its own network and allowing me to connect my phone to the robot via Wifi. Then after installing the Freenove App on my phone and clicking the Hexapod mode, I succeeded in performing the same movement functions wirelessly on my phone that I had previously tested using the Processing App on my computer.
 
 <img src="Screenshot 2025-06-27 132400.jpg" width="700" height="600">
-From Freenove Hexapod tutorial file
+From <a href="[https://chatgpt.com/](https://github.com/Freenove/Freenove_Hexapod_Robot_Kit/archive/master.zip)"> Freenove Hexapod </a> tutorial file
 
 ### Challenges
 
@@ -79,11 +79,9 @@ During my assembly, I struggled soldering on specific pieces. For example, the t
 # Schematics 
 
 <img src="Screenshot 2025-07-02 132955.jpg">
-
-From Freenove Hexapod tutorial file
+From <a href="[https://chatgpt.com/](https://github.com/Freenove/Freenove_Hexapod_Robot_Kit/archive/master.zip)"> Freenove Hexapod </a> tutorial file
 
 <img src="wiring diagram cokoino arm.png">
-
 From LK Cokoino Robotic Arm tutorial file
 
 <!---
