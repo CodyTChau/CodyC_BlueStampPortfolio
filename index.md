@@ -130,7 +130,8 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 ### Hexapod Code:
 
-<pre> #ifndef ARDUINO_AVR_MEGA2560
+```c++
+#ifndef ARDUINO_AVR_MEGA2560
 #error Wrong board. Please choose "Arduino/Genuino Mega or Mega 2560"
 #endif
 
@@ -147,11 +148,13 @@ void setup() {
 void loop() {
   // Update Freenove Hexapod Robot
   robot.Update();
-} </pre>
+}
+```
 
 ### Hexapod Remote Code:
-  
-<pre> #ifndef ARDUINO_AVR_UNO
+
+```c++ 
+#ifndef ARDUINO_AVR_UNO
 #error Wrong board. Please choose "Arduino/Genuino Uno"
 #endif
 
@@ -168,12 +171,13 @@ void setup() {
 void loop() {
   // Update remote
   remote.Update();
-} </pre>
-
+}
+```
 
 ### LK Cokoino Arm Code:
 
-<pre> #include "src/CokoinoArm.h"
+```c++
+#include "src/CokoinoArm.h"
 #include <SoftwareSerial.h>
 
 #define buzzerPin 9
@@ -285,9 +289,10 @@ void loop() {
   if (BTSerial.available()) {
     handleBluetoothCommand(BTSerial.read());
   }
-} </pre>
+}
+```
 
-If you're seeing this then it's probably still broken fr fr ong
+If you're seeing this it should be working now
 
 # Bill of Materials
 
