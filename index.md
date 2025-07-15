@@ -279,6 +279,8 @@ void loop() {
   }
 } </pre>
 
+If you see this it means the page is up to date
+
 # Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
