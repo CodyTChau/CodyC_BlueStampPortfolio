@@ -119,13 +119,53 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 -->
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-Hexapod Code:
+### Hexapod Code:
 
-LK Cokoino Arm Code:
+<pre>#ifndef ARDUINO_AVR_MEGA2560
+#error Wrong board. Please choose "Arduino/Genuino Mega or Mega 2560"
+#endif
 
-#include "src/CokoinoArm.h"
+// Include FNHR (Freenove Hexapod Robot) library
+#include <FNHR.h>
+
+FNHR robot;
+
+void setup() {
+  // Start Freenove Hexapod Robot with default function
+  robot.Start(true);
+}
+
+void loop() {
+  // Update Freenove Hexapod Robot
+  robot.Update();
+} </pre>
+
+### Hexapod Remote Code:
+  
+<pre>#ifndef ARDUINO_AVR_UNO
+#error Wrong board. Please choose "Arduino/Genuino Uno"
+#endif
+
+// Include FNHR (Freenove Hexapod Robot) library
+#include <FNHR.h>
+
+FNHRRemote remote;
+
+void setup() {
+  // Start remote
+  remote.Start();
+}
+
+void loop() {
+  // Update remote
+  remote.Update();
+} </pre>
+
+
+### LK Cokoino Arm Code:
+
+<pre>#include "src/CokoinoArm.h"
 #include <SoftwareSerial.h>
 
 #define buzzerPin 9
@@ -237,7 +277,7 @@ void loop() {
   if (BTSerial.available()) {
     handleBluetoothCommand(BTSerial.read());
   }
-}
+} </pre>
 
 # Bill of Materials
 
