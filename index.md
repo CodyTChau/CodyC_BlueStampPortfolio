@@ -128,7 +128,7 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 ### Hexapod Code:
 
-<pre>#ifndef ARDUINO_AVR_MEGA2560
+<pre> ``` #ifndef ARDUINO_AVR_MEGA2560
 #error Wrong board. Please choose "Arduino/Genuino Mega or Mega 2560"
 #endif
 
@@ -145,11 +145,12 @@ void setup() {
 void loop() {
   // Update Freenove Hexapod Robot
   robot.Update();
-} </pre>
+} 
+``` </pre>
 
 ### Hexapod Remote Code:
   
-<pre>#ifndef ARDUINO_AVR_UNO
+<pre> ``` #ifndef ARDUINO_AVR_UNO
 #error Wrong board. Please choose "Arduino/Genuino Uno"
 #endif
 
@@ -166,12 +167,13 @@ void setup() {
 void loop() {
   // Update remote
   remote.Update();
-} </pre>
+}  
+``` </pre>
 
 
 ### LK Cokoino Arm Code:
 
-<pre>#include "src/CokoinoArm.h"
+<pre> ``` #include "src/CokoinoArm.h"
 #include <SoftwareSerial.h>
 
 #define buzzerPin 9
@@ -283,9 +285,10 @@ void loop() {
   if (BTSerial.available()) {
     handleBluetoothCommand(BTSerial.read());
   }
-} </pre>
+}
+```</pre>
 
-If you see this it means the page is up to date fr fr
+If you see this it means its updated for real this time
 
 # Bill of Materials
 
