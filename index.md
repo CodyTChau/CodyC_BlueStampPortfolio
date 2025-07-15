@@ -80,7 +80,11 @@ During my assembly, I struggled soldering on specific pieces. For example, the t
 
 <img src="Screenshot 2025-07-02 132955.jpg">
 
+From Freenove Hexapod tutorial file
+
 <img src="wiring diagram cokoino arm.png">
+
+From LK Cokoino Robotic Arm tutorial file
 
 <!---
 # Final Milestone
