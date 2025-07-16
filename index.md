@@ -124,8 +124,6 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 
 -->
 
-<img src="IMG_3888.png">
-
 # Code
 
 ### Hexapod Code:
