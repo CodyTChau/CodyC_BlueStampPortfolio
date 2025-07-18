@@ -176,11 +176,8 @@ void loop() {
 
 ```c++
 #include "src/CokoinoArm.h"
-#include <SoftwareSerial.h>
-
 #define buzzerPin 9
 
-SoftwareSerial BTSerial(10, 11); // RX, TX
 CokoinoArm arm;
 
 int xL, yL, xR, yR;
@@ -188,76 +185,13 @@ int xL_center = 512, yL_center = 512;
 int xR_center = 512, yR_center = 512;
 int deadZone = 30;
 
-int currentAngle1 = 90;
-int currentAngle2 = 90;
-int currentAngle3 = 90;
-int currentAngle4 = 90;
-
-void turnUD() {
-  int deviation = xL - xL_center;
-  if (abs(deviation) > deadZone) {
-    int delta = (deviation < 0)
-      ? map(abs(deviation), deadZone, xL_center, 1, 5)
-      : -map(abs(deviation), deadZone, 1023 - xL_center, 1, 5);
-    currentAngle2 = constrain(currentAngle2 + delta, 0, 180);
-    arm.servo2.write(currentAngle2);
-    delay(15);
-  }
-}
-
-void turnLR() {
-  int deviation = yL - yL_center;
-  if (abs(deviation) > deadZone) {
-    int delta = (deviation < 0)
-      ? -map(abs(deviation), deadZone, yL_center, 1, 5)
-      : map(abs(deviation), deadZone, 1023 - yL_center, 1, 5);
-    currentAngle1 = constrain(currentAngle1 + delta, 0, 180);
-    arm.servo1.write(currentAngle1);
-    delay(15);
-  }
-}
-
-void controlServo3WithRightStick() {
-  if (xR < 500 || xR > 524) {
-    int delta = (xR < 512)
-      ? -map(xR, 0, 512, 5, 1)
-      : map(xR, 512, 1023, 1, 5);
-    currentAngle3 = constrain(currentAngle3 + delta, 0, 180);
-    arm.servo3.write(currentAngle3);
-    delay(15);
-  }
-}
-
-void controlClawWithRightY() {
-  if (yR < 500 || yR > 524) {
-    int delta = (yR < 512)
-      ? -map(yR, 0, 512, 5, 1)
-      : map(yR, 512, 1023, 1, 5);
-    currentAngle4 = constrain(currentAngle4 + delta, 0, 180);
-    arm.servo4.write(currentAngle4);
-    delay(15);
-  }
-}
-
-void handleBluetoothCommand(char cmd) {
-  switch (cmd) {
-    case 'L': arm.left(10); break;
-    case 'R': arm.right(10); break;
-    case 'U': arm.up(10); break;
-    case 'D': arm.down(10); break;
-    case 'O': arm.open(10); break;
-    case 'C': arm.close(10); break;
-    default:
-      Serial.print("Unknown command: ");
-      Serial.println(cmd);
-      break;
-  }
-}
+int currentAngle1 = 90;  // Base
+int currentAngle2 = 90;  // Shoulder
+int currentAngle3 = 90;  // Elbow
+int currentAngle4 = 90;  // Claw
 
 void setup() {
   Serial.begin(9600);
-  BTSerial.begin(9600);
-
   arm.ServoAttach(4, 5, 6, 7);
   arm.JoyStickAttach(A0, A1, A2, A3);
   delay(1000);
@@ -274,18 +208,81 @@ void loop() {
   xR = constrain(arm.JoyStickR.read_x(), 0, 1023);
   yR = constrain(arm.JoyStickR.read_y(), 0, 1023);
 
-  Serial.print("xL: "); Serial.print(xL);
-  Serial.print(" yL: "); Serial.print(yL);
-  Serial.print(" xR: "); Serial.print(xR);
-  Serial.print(" yR: "); Serial.println(yR);
-
   if (abs(xL - xL_center) > deadZone) turnUD();
   if (abs(yL - yL_center) > deadZone) turnLR();
   if (abs(xR - xR_center) > deadZone) controlServo3WithRightStick();
   if (abs(yR - yR_center) > deadZone) controlClawWithRightY();
 
-  if (BTSerial.available()) {
-    handleBluetoothCommand(BTSerial.read());
+  if (Serial.available()) {
+    char cmd = Serial.read();
+    handleBluetoothCommand(cmd);
+  }
+}
+
+void turnUD() {
+  int deviation = xL - xL_center;
+  int delta = (deviation < 0)
+                ? map(abs(deviation), deadZone, xL_center, 1, 5)
+                : -map(abs(deviation), deadZone, 1023 - xL_center, 1, 5);
+  currentAngle2 = constrain(currentAngle2 + delta, 0, 180);
+  arm.servo2.write(currentAngle2);
+  delay(15);
+}
+
+void turnLR() {
+  int deviation = yL - yL_center;
+  int delta = (deviation < 0)
+                ? -map(abs(deviation), deadZone, yL_center, 1, 5)
+                : map(abs(deviation), deadZone, 1023 - yL_center, 1, 5);
+  currentAngle1 = constrain(currentAngle1 + delta, 0, 180);
+  arm.servo1.write(currentAngle1);
+  delay(15);
+}
+
+void controlServo3WithRightStick() {
+  int delta = (xR < 512)
+                ? -map(xR, 0, 512, 5, 1)
+                : map(xR, 512, 1023, 1, 5);
+  currentAngle3 = constrain(currentAngle3 + delta, 0, 180);
+  arm.servo3.write(currentAngle3);
+  delay(15);
+}
+
+void controlClawWithRightY() {
+  int delta = (yR < 512)
+                ? -map(yR, 0, 512, 5, 1)
+                : map(yR, 512, 1023, 1, 5);
+  currentAngle4 = constrain(currentAngle4 + delta, 0, 180);
+  arm.servo4.write(currentAngle4);
+  delay(15);
+}
+
+void handleBluetoothCommand(char cmd) {
+  switch (cmd) {
+    case 'r': currentAngle1 = constrain(currentAngle1 - 5, 0, 180); arm.servo1.write(currentAngle1); break;
+    case 'l': currentAngle1 = constrain(currentAngle1 + 5, 0, 180); arm.servo1.write(currentAngle1); break;
+    case 'd': 
+      currentAngle2 = constrain(currentAngle2 + 5, 0, 180);
+      currentAngle3 = constrain(currentAngle3 + 5, 0, 180);
+      arm.servo2.write(currentAngle2);
+      arm.servo3.write(currentAngle3);
+      break;
+    case 'u': 
+      currentAngle2 = constrain(currentAngle2 - 5, 0, 180);
+      currentAngle3 = constrain(currentAngle3 - 5, 0, 180);
+      arm.servo2.write(currentAngle2);
+      arm.servo3.write(currentAngle3);
+      break;
+    case 'o': currentAngle4 = constrain(currentAngle4 + 5, 0, 180); arm.servo4.write(currentAngle4); break;
+    case 'c': currentAngle4 = constrain(currentAngle4 - 5, 0, 180); arm.servo4.write(currentAngle4); break;
+    case 'q': currentAngle2 = constrain(currentAngle2 + 5, 0, 180); arm.servo2.write(currentAngle2); break;
+    case 'a': currentAngle2 = constrain(currentAngle2 - 5, 0, 180); arm.servo2.write(currentAngle2); break;
+    case 's': currentAngle3 = constrain(currentAngle3 + 5, 0, 180); arm.servo3.write(currentAngle3); break;
+    case 'w': currentAngle3 = constrain(currentAngle3 - 5, 0, 180); arm.servo3.write(currentAngle3); break;
+    default:
+      Serial.print("Unknown command: ");
+      Serial.println(cmd);
+      break;
   }
 }
 ```
