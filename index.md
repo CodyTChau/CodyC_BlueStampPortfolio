@@ -285,8 +285,6 @@ void handleBluetoothCommand(char cmd) {
 }
 ```
 
-If you're seeing this it should be working now
-
 # Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
