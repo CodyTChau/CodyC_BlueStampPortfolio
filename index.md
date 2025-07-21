@@ -9,7 +9,7 @@ The Hexapod is a six legged robot designed to mimic the walking of similar insec
 
 # Final Milestone: Adding a Claw & Finalizing the Build
 
-<img src="IMG_3917.png">
+<img src="IMG_3917 (3).png " width="600" height="600">
 
 ### Summary
 
