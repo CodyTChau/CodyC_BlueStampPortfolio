@@ -82,7 +82,7 @@ From <a href="https://github.com/Freenove/Freenove_Hexapod_Robot_Kit/archive/mas
 
 <img src="wiring diagram cokoino arm.png">
 
-From LK Cokoino Robotic Arm tutorial file
+From <a href="https://github.com/Cokoino/CKK0006"> LK Cokoino Robotic Arm </a> tutorial file
 
 <!---
 # Final Milestone
@@ -290,12 +290,19 @@ void handleBluetoothCommand(char cmd) {
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | FREENOVE Hexapod Robot Kit | contains Hexapod components | $126.95 | <a href="https://www.amazon.com/Freenove-Raspberry-Crawling-Detailed-Tutorial/dp/B07FLVZ2DN?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=AV3WCPW70PEXC&th=1"> Amazon Link </a> |
-| LK Cokoino Robot Arm Kit | contains LK Cokoino Arm components | $126.95 | <a href="[https://www.amazon.com/Freenove-Raspberry-Crawling-Detailed-Tutorial/dp/B07FLVZ2DN?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=AV3WCPW70PEXC&th=1](https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1)"> Amazon Link </a> |
+| LK Cokoino Robot Arm Kit | contains LK Cokoino Arm components | $126.95 | <a href="https://www.amazon.com/LK-COKOINO-Compliment-Engineering-Technology/dp/B081FG1JQ1"> Amazon Link </a> |
 
 # Resources Used
 
-- <a href="https://chatgpt.com/"> chatgpt.com </a>
-- <a href="https://www.google.com/"> google.com </a>
-- <a href="https://forum.arduino.cc/?utm_source=google&utm_medium=cpc&utm_campaign=US-Pmax&gad_source=1&gad_campaignid=22096018017&gbraid=0AAAAACbEa87kkIPAge4oJDHhq5mou8kNd&gclid=CjwKCAjw7MLDBhAuEiwAIeXGIUnnXopqW49c_WzxMeU598L7HnDryC3cIj5LD9C1Jiv0ZrMBpG4WZRoCyqAQAvD_BwE
-"> forum.arduino.cc </a>
+- <a href="https://github.com/Freenove/Freenove_Hexapod_Robot_Kit/archive/master.zip"> Freenove Hexapod Tutorial File </a>
+- <a href="https://github.com/Cokoino/CKK0006"> LK Cokoino Robotic Arm Tutorial File </a>
+- <a href="https://docs.arduino.cc/language-reference/"> Language Reference </a>
+- <a href="https://forum.arduino.cc/t/cant-find-arduino-libaries/1105892"> Can't find Arduino Libaries </a>
+- <a href="https://learn.adafruit.com/adafruit-arduino-lesson-14-servo-motors/servo-motors"> Arduino Lesson 14. Servo Motors </a>
+- <a href="https://www.pololu.com/blog/16/electrical-characteristics-of-servos-and-introduction-to-the-servo-control-interface"> Electrical characteristics of servos and introduction to the servo control interface </a>
+- <a href="https://electronics.stackexchange.com/questions/13390/how-to-use-a-phototriac-coupler-to-trigger-the-main-triac/13397#13397"> How to use a phototriac coupler to trigger the main triac? </a>
+- <a href="https://www.martyncurrey.com/hm-10-use-an-arduino-to-talk-to-the-hm-10/?utm_source=chatgpt.com"> Martyn Currey HM-10: Use An Arduino To Talk TO A HM-10 </a>
+- <a href="https://docs.cirkitdesigner.com/component/2e4a23a1-9350-4a65-b805-7ffefd91b7c7/bluetooth-module-hm-10?utm_source=chatgpt.com"> How to Use Bluetooth module HM-10: Examples, Pinouts, and Specs </a>
+- <a href="https://stackoverflow.com/questions/33124593/hm-10-ble-master-and-send-data-to-specific-characteristic?utm_source=chatgpt.com"> HM-10 BLE master and send data to specific characteristic </a>
+- <a href="https://forum.arduino.cc/t/alternatives-for-hc-05-which-can-connect-on-iphone/686250"> Alternative for HC-05 which cannot connect on iPhone </a>
 - <a href="https://www.youtube.com/watch?v=nivTZeGthf4"> YT Freenove Hexapod tutorial </a>
